@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html data-theme="light">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="shortcut icon" href="img/LOGO.png" type="image/x-icon">
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <title>Personagens</title>
+    <script src='main.js'></script>
+    <script src='darkmode.js' defer></script>  
+    <script>
+    const changeThemeToDark = () => {
+        document.documentElement.setAttribute("data-theme", "dark");
+        localStorage.setItem("data-theme", "dark");
+    }
+
+    const changeThemeToLight = () => {
+        document.documentElement.setAttribute("data-theme", "light");
+        localStorage.setItem("data-theme", 'light');
+    }
+    let theme = localStorage.getItem('data-theme');
+    if (theme == 'dark') changeThemeToDark();
+
+    </script>
+</head>
+<body>
+    <header>
+        <nav id="personagens">
+            <div class="logo">
+                <h1><a href="home.html"><img src="img/LOGO.png" alt="Logo Heroes Autoral" id="logo"></a></h1>
+            </div>
+    
+            <ul>
+                <li> <a href="filmes.html"> Filmes </a> </li>
+                <li> <a href="personagens.html"> Personagens </a> </li>
+                <li> <a href="sobre.html"> Sobre </a> </li>
+            </ul>
+            <label class="switch">
+                <input type="checkbox" name="botao-dark" id="botao-dark">
+                <span class="slider"></span>
+            </label>
+        </nav>
+    </header>
+
+  
+
+
+<div id="personagenss">
+
+<div  id="imagemperso">
+
+
+</div>
+
+<div id="infoperso">
+   
+
+</div>
+
+<div class="api">
+    <input type="text" name="nome" required="required" id="name" placeholder="Nome do personagem" class="botaopers" />
+    <button class="botaopers" onclick="adicionar()">Adicionar</button>
+</div>
+
+</div>
+
+
+
+</body>
+</html>

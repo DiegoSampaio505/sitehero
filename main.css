@@ -1,0 +1,540 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background-color: var(--background-body);
+  transition: background 0.5s linear, color 0.5s linear;
+  color: #000000;
+}
+
+a{
+  text-decoration: none;
+}
+
+nav.home{
+  margin-bottom: 150px;
+}
+
+nav{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: var(--background-nav);
+    padding: 10px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+}
+nav li{
+    margin-left: 7px;
+}
+nav li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+nav li a:hover{
+    color: #ff0000;
+}
+
+
+/* CORPO DA PAGINA */
+
+main#page{
+    flex:1;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-left:-500px;
+    margin-top:-250px;
+    text-align: auto;
+}
+
+/* HOME */
+
+.sec2 *{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+.sec2:hover figcaption, .sec2.hover figcaption {
+    top: 0;
+  }
+
+.sec2:hover img, .sec2.hover img{
+  filter: blur(10px);
+}
+
+
+  .sec2{
+    position: relative;
+    overflow: hidden;
+  }
+
+  .sec2 figcaption {
+    position: absolute;
+    height: 310px;
+    width: 400px;
+    top: calc(100%);
+    background-color: rgba(0, 71, 252, 0.267);
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  
+  .sec2 figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+  }
+
+  figcaption{
+    color: #000000;
+  }
+
+main#home{
+  display:flex;
+  flex-direction: row;
+  margin-left:auto;
+  margin-top:80px;
+  text-align: auto;
+}
+
+div.sec1{
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#imagens{
+    width: 400px;
+    height: 300px;
+    margin-left: 40px;
+    margin-right: 40px;
+    flex: 1;
+}
+
+p#home{
+  text-align: center;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+h3#titulos{
+    font-size: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+}
+
+h3#titulos:hover{
+  color: #ff0000;
+}
+
+
+/*--Página Filmes--*/
+
+nav#navfim{
+  margin: 10px;
+  background-color: bisque;
+}
+
+
+h1#font0{ 
+    font-weight: 500;
+    font-size: 2.0rem;
+    line-height: 1.0;
+    color:var(--color-h1-h2);
+    }
+
+h2{
+  color:var(--color-h1-h2);
+}  
+.words {
+  width: 1000px;
+  overflow-wrap: break-word; 
+  word-wrap: break-word;
+  word-break: break-word;
+  font-size: 21px;
+  color:var(--color-p);
+}
+  
+img#logo{
+  width: 200px;
+  height: 80px;
+}
+
+div.filmes{
+  margin-top: 50px;
+}
+
+.btt {
+  background-color: #111827;
+  border: 1px solid transparent;
+  border-radius: .75rem;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex: 0 0 auto;
+  font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  padding: .75rem 1.2rem;
+  text-align: center;
+  text-decoration: none #6B7280 solid;
+  text-decoration-thickness: auto;
+  transition-duration: .2s;
+  transition-property: background-color,border-color,color,fill,stroke;
+  transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+}
+
+.btt:hover {
+  background-color: #374151;
+}
+
+.btt:focus {
+  box-shadow: none;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+@media (min-width: 768px) {
+  .btt {
+    padding: .75rem 1.5rem;
+  }
+}
+
+/*--Página Sobre--*/
+
+div#sobre{
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+img#sobre{
+    width: 300px;
+    height:300px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+h1#sobre{
+  text-align: center;
+  margin-bottom: 100px;
+  color:var(--color-h1-h2);
+}
+
+
+/*Card Sobre */
+
+.card *{
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.card:hover figcaption, .card.hover figcaption {
+  top: 0;
+}
+
+.card:hover img, .card.hover img{
+filter: blur(10px);
+}
+
+.card h3{
+  font-size: 25px;
+}
+
+.card{
+  position: relative;
+  overflow: hidden;
+}
+
+.card figcaption {
+  position: absolute;
+  height: 310px;
+  width: 300px;
+  top: calc(86%);
+  background-color: rgba(252, 252, 252, 0.267);
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.card figcaption:before {
+  position: absolute;
+  content: '';
+  z-index: 2;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  height: 80px;
+
+}
+
+
+/* Pagina personagens */
+
+nav#personagens{
+  margin-bottom: 10px;
+}
+
+div#divheroisflex{
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div#personagenss{
+  display: flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+div.api{
+  border: 2px solid;
+  border-radius: 10px;
+  box-shadow: rgb(72, 72, 72) 5px 5px 5px;
+  width: 380px;
+  height: 120px;
+  margin: 10px;
+  margin-left: 10px;
+}
+
+
+.botaopers{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+
+button.botaopers {
+  background-color: #111827;
+  border: 1px solid transparent;
+  border-radius: .75rem;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex: 0 0 auto;
+  font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  padding: .5rem 1.2rem;
+  text-align: center;
+  text-decoration: none #6B7280 solid;
+  text-decoration-thickness: auto;
+  transition-duration: .2s;
+  transition-property: background-color,border-color,color,fill,stroke;
+  transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+}
+
+button.botaopers:hover {
+  background-color: #374151;
+}
+
+button.botaopers:focus {
+  box-shadow: none;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+@media (min-width: 768px) {
+  .btt {
+    padding: .75rem 1.5rem;
+  }
+}
+
+input.botaopers{
+width: 350px;
+height: 40px;
+}
+
+img#fotosdosherois{
+  border: 2px solid;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px;
+  width: 400px;
+  height: 400px;
+}
+
+.personagem{
+  text-align: center;
+  width: 400px;
+  height: 400px;
+}
+
+.infos{
+  border:2px solid;
+  border-radius: 10px;
+  box-shadow:rgb(72, 72, 72) 5px 5px 5px;
+  text-align: center;
+  width: 400px;
+  height: 400px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 40px;
+}
+
+text{
+  color:var(--color-text);
+}
+
+/*Dark mode*/
+
+html {
+  --background-body:#e8e6e7;
+  --color-body:#000;
+  --background-nav:    #1d1d1f;
+  --color-p: #000000;
+  --color-h1-h2: #000000;
+  --color-text:#000;
+  --color-filminho:#000;
+  
+}
+
+html[data-theme="dark"] {
+  --background-body:rgb(49, 49, 49);
+  --color-body:rgb(255, 255, 255);
+  --background-nav:   #141414;
+  --color-p: #ffffff;
+  --color-h1-h2: #ffffff;
+  --color-text:#fff;
+  --color-filminho:#fff;
+}
+
+/* Botao Dark mode*/
+
+.switch {
+  --width-of-switch: 3.5em;
+  --height-of-switch: 2em;
+  --size-of-icon: 1.4em;
+  --slider-offset: 0.3em;
+  position: relative;
+  width: var(--width-of-switch);
+  height: var(--height-of-switch);
+}
+
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f4f4f5;
+  transition: .4s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: var(--size-of-icon,1.4em);
+  width: var(--size-of-icon,1.4em);
+  border-radius: 20px;
+  left: var(--slider-offset,0.3em);
+  top: 50%;
+  transform: translateY(-50%);
+  background: linear-gradient(40deg,#ff2c56,#ffb75f 70%);
+  ;
+ transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #303136;
+}
+
+input:checked + .slider:before {
+  left: calc(100% - (var(--size-of-icon,1.4em) + var(--slider-offset,0.3em)));
+  background: #303136;
+  box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
+}
+
+#filminho{
+  border:2px solid;
+  border-radius: 10px;
+  box-shadow:rgb(72, 72, 72) 5px 5px 5px;
+  text-align: center;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 40px;
+  color:var(--color-filminho);
+}
+
+h2#film{
+  padding: 5px;
+  margin-top: 30px;
+}
+
+.tabelaeditavel{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.tabelaeditavel td{
+  border: solid 1px;
+  padding: 10px;
+}
+
